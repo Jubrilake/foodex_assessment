@@ -18,6 +18,12 @@ import smavatar from "./smavatar.svg";
 import filter from "./filter.svg";
 import statuspicks from "./statuspicks.svg";
 import blacksparkle from "./blacksparkle.svg";
+import threedcash from "./3dcash.svg";
+import threedbeef from "./3dbeef.svg";
+import threedonion from "./3donion.svg";
+import threedthumbup from "./3dthumbup.svg";
+import letter from "./letter.svg";
+import manwithphone from "./manwithphone.svg";
 
 export {
   logo,
@@ -40,4 +46,10 @@ export {
   filter,
   statuspicks,
   blacksparkle,
+  threedbeef,
+  threedcash,
+  threedonion,
+  threedthumbup,
+  letter,
+  manwithphone,
 };

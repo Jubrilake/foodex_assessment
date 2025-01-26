@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { AppSidebar } from "./components/app-sidebar";
+import { AppSidebar } from "./components/shared/app-sidebar";
 import Home from "./pages/Home";
 import JoinWaitlist from "./pages/JoinWaitlist";
 

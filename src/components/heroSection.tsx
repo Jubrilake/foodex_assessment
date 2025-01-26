@@ -1,16 +1,16 @@
 import React from "react";
 import { circle } from "@/assets";
-import { FoodCarousel } from "@/components/food-carousel";
+import { FoodCarousel } from "@/components/home/food-carousel";
 import { foodItems } from "@/data/foodItems";
-import { PhoneMockup } from "@/components/phone-mockup";
-import HeroContent from "@/components/hero";
+import { PhoneMockup } from "@/components/home/phone-mockup";
+import HeroContent from "@/components/home/hero-content";
 
 const HeroSection = () => {
   const [activeFood, setActiveFood] = React.useState(
     foodItems[foodItems.length - 1]
   );
   return (
-    <main className="flex-1 m-4 pt-20 relative rounded-2xl h-auto overflow-hidden">
+    <main className="flex-1 my-4 pt-20 relative rounded-2xl h-auto overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{

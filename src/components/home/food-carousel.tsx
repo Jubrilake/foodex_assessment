@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
-import { Card, CardContent } from "./ui/card";
-import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
-import { foodItems, FoodItem } from "../data/foodItems";
+import { Card, CardContent } from "../ui/card";
+import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
+import { foodItems, FoodItem } from "../../data/foodItems";
 import Autoplay from "embla-carousel-autoplay";
 import { thumbup } from "@/assets";
 import { toNaira } from "@/lib/utils";
