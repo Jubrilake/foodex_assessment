@@ -9,11 +9,15 @@ import { FaHeart } from "react-icons/fa";
 const CtaTwoColumn: React.FC = () => {
   return (
     <section className="relative bg-[#FFF8F2] mx-5 rounded-xl px-0">
-      <img src={letter} alt="" className="absolute top-3 left-4 w-52 h-auto" />
       <img
         src={letter}
         alt=""
-        className="absolute bottom-0 right-4 w-52 h-auto"
+        className="md:absolute top-3 left-4 w-52 h-auto hidden "
+      />
+      <img
+        src={letter}
+        alt=""
+        className="md:absolute bottom-0 right-4 w-52 h-auto hidden"
       />
 
       <div className="grid grid-cols-1 md:p-10 p-0 md:grid-cols-[2fr_1.8fr] md:gap-16 gap-y-10 mt-10 ">
