@@ -17,7 +17,6 @@ const CtaTwoColumn: React.FC = () => {
       />
 
       <div className="grid grid-cols-1 md:p-10 p-0 md:grid-cols-[2fr_1.8fr] md:gap-16 gap-y-10 mt-10 ">
-        {/* Left Column */}
         <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {cardItems.map((item) => (
             <Card
@@ -59,7 +58,6 @@ const CtaTwoColumn: React.FC = () => {
           ))}
         </div>
 
-        {/* Right Column */}
         <div className="lg:block relative grid grid-rows-1 grid-cols-1">
           <img
             src={manwithphone}

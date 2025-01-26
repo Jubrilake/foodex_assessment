@@ -9,8 +9,16 @@ const CtaSection = () => {
         <img src={blacksparkle} alt="" />
       </div>
       <div className=" mx-auto space-y-6 relative">
-        <img src={dbcloud} alt="" className="absolute left-0 bottom-0 md:w-auto h-auto w-28 " />
-        <img src={cloud} alt="" className="absolute right-0 bottom-0 md:w-auto h-auto w-20" />
+        <img
+          src={dbcloud}
+          alt=""
+          className="absolute left-0 bottom-0 md:w-auto h-auto w-28 "
+        />
+        <img
+          src={cloud}
+          alt=""
+          className="absolute right-0 bottom-0 md:w-auto h-auto w-20"
+        />
         <h2 className="text-3xl md:text-5xl font-bold text-[#111111]">
           tired of eating the <br />{" "}
           <span className="bg-[#d87023] border-4 md:text-3xl text-xl border-black font-medium text-white px-8 py-2 rounded-full inline-block mx-2">
@@ -23,7 +31,7 @@ const CtaSection = () => {
           perfect solution for discovering your next dish.
         </p>
       </div>
-      {/* two colum grid */}
+
       <CtaTwoColumn />
     </section>
   );

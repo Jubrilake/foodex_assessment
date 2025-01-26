@@ -19,8 +19,8 @@ export function FoodCarousel({ onActiveItemChange }: FoodCarouselProps) {
   const plugin = useRef(
     AutoScroll({
       speed: 1,
-      playOnInit: true, 
-      stopOnInteraction: false, 
+      playOnInit: true,
+      stopOnInteraction: false,
     })
   );
 
@@ -31,24 +31,22 @@ export function FoodCarousel({ onActiveItemChange }: FoodCarouselProps) {
   useEffect(() => {
     if (!api) return;
 
-    // Set the initial active item
     onActiveItemChange(foodItems[initialIndex]);
 
-    // Update active item on carousel selection
     api.on("select", () => {
       const selectedIndex = api.selectedScrollSnap();
       setCurrent(selectedIndex);
       onActiveItemChange(foodItems[selectedIndex]);
     });
 
-    api.scrollTo(initialIndex); // Scroll to the initial index
+    api.scrollTo(initialIndex);
   }, [api, onActiveItemChange, initialIndex]);
 
   return (
     <Carousel
       setApi={handleSetApi}
       className="w-full mx-auto"
-      plugins={[plugin.current]} // Attach the AutoScroll plugin
+      plugins={[plugin.current]}
       opts={{
         align: "center",
         loop: true,

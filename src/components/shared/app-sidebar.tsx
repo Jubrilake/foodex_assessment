@@ -15,7 +15,6 @@ export function AppSidebar() {
 
   return (
     <>
-      {/* Mobile Toggle Button */}
       <div className="lg:hidden flex justify-between items-center p-4">
         <img src={logo} alt="" />
         <div>
@@ -41,21 +40,18 @@ export function AppSidebar() {
         </div>
       </div>
 
-      {/* Sidebar */}
       <aside
         className={`fixed inset-y-0 left-0 z-50 transform bg-white transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } lg:translate-x-0 lg:relative lg:w-[10%] xl:w-[13%] w-[75%]`}
       >
         <div className="flex flex-col items-start h-full p-6 md:p-10 ">
-          {/* Logo */}
           <div className="pb-6">
             <a href="/" className="logo">
               <img src={logo} alt="logo" className="max-w-full h-auto" />
             </a>
           </div>
 
-          {/* Navigation Links */}
           <nav className="flex-1">
             <ul className="space-y-2">
               {navItems.map((item) => (
@@ -81,7 +77,6 @@ export function AppSidebar() {
                 </li>
               ))}
             </ul>
-            {/* Social Media Links */}
             <div className="mt-4">
               <div className="flex space-x-3">
                 <a

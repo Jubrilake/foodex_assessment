@@ -5,11 +5,8 @@ import HeroSection from "@/components/heroSection";
 const Home = () => {
   return (
     <div className="flex-1 flex-col my-5 mx-4">
-      {/* HERO SECTION */}
       <HeroSection />
-      {/* CTA SECTION */}
       <CtaSection />
-      {/* FOOTER SECTION */}
       <FooterSection />
     </div>
   );
