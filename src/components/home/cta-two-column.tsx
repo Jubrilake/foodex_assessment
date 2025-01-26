@@ -65,25 +65,25 @@ const CtaTwoColumn: React.FC = () => {
             className="w-full h-full object-contain md:absolute relative"
           />
           <div className="absolute md:bottom-[13.5rem] bottom-[12rem] -left-8 md:-left-4 py-2 px-4 bg-[#009F79] border-4 border-white shadow-lg rounded-xl text-white flex space-x-4 items-center w-80 h-16 text-sm">
-            <div className="flex justify-center items-center w-10 h-10 rounded-full bg-[#1E735E]">
+            <div className="flex justify-center items-center md:w-10 md:h-10 w-4 h-4 rounded-full bg-[#1E735E]">
               👍🏽
             </div>
             <p className="font-medium">Picked by 314 people today</p>
           </div>
           <div className="absolute md:bottom-[8rem] bottom-[7rem] md:left-8 left-6 py-2 px-4 bg-[#009F79] border-4 border-white shadow-lg rounded-xl text-sm text-white flex space-x-4 items-center w-80 h-16">
-            <div className="flex justify-center items-center w-10 h-10 rounded-full bg-[#1E735E]">
+            <div className="flex justify-center items-center md:w-10 md:h-10 w-4 h-4  rounded-full bg-[#1E735E]">
               🧅
             </div>
             <p className="font-medium">Exclude onions.</p>
           </div>
           <div className="absolute md:bottom-[2.8rem] bottom-[2rem] md:left-14 left-12 py-2 px-4 bg-[#009F79] text-sm border-4 border-white shadow-lg rounded-xl text-white flex space-x-4 items-center w-80 h-16">
-            <div className="flex justify-center items-center w-10 h-10 rounded-full bg-[#1E735E]">
+            <div className="flex justify-center items-center md:w-10 md:h-10 w-4 h-4 rounded-full bg-[#1E735E]">
               🥩
             </div>
             <p className="font-medium">Must include turkey</p>
           </div>
-          <div className="absolute md:top-[10rem] top-[6rem] md:-right-10 -right-7 py-2 px-4 bg-[#D87023] border-4 border-white text-sm shadow-lg rounded-xl text-white space-y-2">
-            <div className="flex justify-center items-center w-10 h-10 rounded-full bg-[#77441E]">
+          <div className="absolute md:top-[10rem] top-[3rem] md:-right-10 -right-7 py-2 px-4 bg-[#D87023] border-4 border-white text-sm shadow-lg rounded-xl text-white space-y-2">
+            <div className="flex justify-center items-center md:w-10 md:h-10 w-4 h-4 rounded-full bg-[#77441E]">
               💵
             </div>
             <p className="font-medium">
