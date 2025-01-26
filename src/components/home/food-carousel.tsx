@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { Card, CardContent } from "../ui/card";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 import { foodItems, FoodItem } from "../../data/foodItems";
-import Autoplay from "embla-carousel-autoplay";
+import AutoScroll from "embla-carousel-auto-scroll";
 import { thumbup } from "@/assets";
 import { toNaira } from "@/lib/utils";
 import type { EmblaCarouselType } from "embla-carousel";
@@ -16,33 +16,39 @@ export function FoodCarousel({ onActiveItemChange }: FoodCarouselProps) {
   const [api, setApi] = useState<EmblaCarouselType | null>(null);
   const [current, setCurrent] = useState<number>(initialIndex);
 
-  const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: false }));
+  const plugin = useRef(
+    AutoScroll({
+      speed: 1,
+      playOnInit: true, 
+      stopOnInteraction: false, 
+    })
+  );
 
   const handleSetApi = (apiInstance: EmblaCarouselType | undefined) => {
     setApi(apiInstance || null);
   };
 
   useEffect(() => {
-    if (!api) {
-      return;
-    }
+    if (!api) return;
 
+    // Set the initial active item
     onActiveItemChange(foodItems[initialIndex]);
 
+    // Update active item on carousel selection
     api.on("select", () => {
       const selectedIndex = api.selectedScrollSnap();
       setCurrent(selectedIndex);
       onActiveItemChange(foodItems[selectedIndex]);
     });
 
-    api.scrollTo(initialIndex);
+    api.scrollTo(initialIndex); // Scroll to the initial index
   }, [api, onActiveItemChange, initialIndex]);
 
   return (
     <Carousel
       setApi={handleSetApi}
       className="w-full mx-auto"
-      plugins={[plugin.current]}
+      plugins={[plugin.current]} // Attach the AutoScroll plugin
       opts={{
         align: "center",
         loop: true,

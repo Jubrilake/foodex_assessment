@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 export function AppSidebar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Get the current path using `window.location.pathname`
   const currentPath = window.location.pathname;
 
   const navItems = [
@@ -44,9 +43,9 @@ export function AppSidebar() {
 
       {/* Sidebar */}
       <aside
-        className={`fixed inset-y-0 left-0 z-50 transform transition-transform duration-300 bg-white ease-in-out ${
+        className={`fixed inset-y-0 left-0 z-50 transform bg-white transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } lg:translate-x-0 lg:relative lg:w-[20%] xl:w-[15%] w-[75%]`}
+        } lg:translate-x-0 lg:relative lg:w-[10%] xl:w-[13%] w-[75%]`}
       >
         <div className="flex flex-col items-start h-full p-6 md:p-10 ">
           {/* Logo */}

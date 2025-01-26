@@ -60,7 +60,10 @@ export default {
   				border: 'hsl(var(--sidebar-border))',
   				ring: 'hsl(var(--sidebar-ring))'
   			}
-  		}
+  		},
+		  fontFamily: {
+			courgette: ['Courgette', 'serif'], 
+		  },
   	}
   },
   plugins: [require("tailwindcss-animate")],
