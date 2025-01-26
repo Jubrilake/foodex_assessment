@@ -46,7 +46,7 @@ export function PhoneMockup({ className, foodItem }: PhoneMockupProps) {
                     alt={foodItem.title}
                     className="object-cover w-full h-auto"
                   />
-                  <div className="absolute top-32 left-6">
+                  <div className="absolute md:top-32 top-24 md:left-6 left-5s">
                     <FaHeart className="text-green-800" />
                   </div>
                 </div>

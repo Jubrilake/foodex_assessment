@@ -24,7 +24,7 @@ const HeroContent = () => {
         Join our Waitlist 😎
       </p>
 
-      <div className="flex max-w-md mx-auto gap-2">
+      <div className="flex flex-col md:flex-row max-w-md mx-auto gap-2">
         <Input
           type="email"
           placeholder="Enter your email"
