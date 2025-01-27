@@ -21,12 +21,12 @@ const CtaSection = () => {
         />
         <h2 className="text-3xl md:text-5xl font-bold text-[#111111]">
           tired of eating the <br />{" "}
-          <span className="bg-[#d87023] border-4 md:text-3xl text-xl border-black font-medium text-white px-8 py-2 rounded-full inline-block mx-2">
+          <span className="bg-[#d87023] border-4 md:text-3xl text-xl border-black font-medium text-white md:px-8 px-3 py-2 rounded-full inline-block mx-2">
             {" "}
             🍛 same dishes everyday? 🍝
           </span>
         </h2>
-        <p className="text-black md:px-96 font-semibold px-24 text-sm md:text-lg">
+        <p className="text-black md:px-96 font-semibold px-12 text-sm md:text-lg">
           Do you crave new and exciting dishes? Look no further! Chow is the
           perfect solution for discovering your next dish.
         </p>

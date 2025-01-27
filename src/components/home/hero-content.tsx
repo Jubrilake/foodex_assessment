@@ -19,7 +19,7 @@ const HeroContent = () => {
         </span>
       </h1>
 
-      <p className="text-white/80 text-center lg:px-48 px-20 text-lg">
+      <p className="text-white/80 text-center md:px-48 px-10 text-lg">
         The patient dog eats left overs. Be the first to know when we launch.
         Join our Waitlist 😎
       </p>
