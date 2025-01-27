@@ -12,12 +12,12 @@ const CtaSection = () => {
         <img
           src={dbcloud}
           alt=""
-          className="absolute left-0 bottom-0 md:w-auto h-auto w-28 "
+          className="absolute left-0 bottom-0 md:w-[20%] h-auto lg:w-[30%] "
         />
         <img
           src={cloud}
           alt=""
-          className="absolute right-0 bottom-0 md:w-auto h-auto w-20"
+          className="absolute right-0 bottom-0 md:w-[10%] h-auto lg:w-[20%]"
         />
         <h2 className="text-3xl md:text-5xl font-bold text-[#111111]">
           tired of eating the <br />{" "}
@@ -26,7 +26,7 @@ const CtaSection = () => {
             🍛 same dishes everyday? 🍝
           </span>
         </h2>
-        <p className="text-black md:px-96 font-semibold px-12 text-sm md:text-lg">
+        <p className="text-black lg:px-80 font-semibold px-12 text-sm md:text-lg">
           Do you crave new and exciting dishes? Look no further! Chow is the
           perfect solution for discovering your next dish.
         </p>

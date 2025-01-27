@@ -22,10 +22,10 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       <div className="relative z-20 flex flex-col items-center justify-center text-white text-2xl">
         <HeroContent />
-        <div className="w-full md:mt-32 md:mb-2 mt-0 mb-10">
+        <div className="w-full lg:mt-32 md:mb-2 mt-0 mb-10">
           <FoodCarousel onActiveItemChange={setActiveFood} />
           <PhoneMockup
-            className="lg:block absolute md:-bottom-[67%] -bottom-[32.5%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            className="lg:block absolute lg:-bottom-[67%] md:-bottom-[55%] -bottom-[32.5%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             foodItem={activeFood}
           />
         </div>

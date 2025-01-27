@@ -20,7 +20,7 @@ const CtaTwoColumn: React.FC = () => {
         className="md:absolute bottom-0 right-4 w-52 h-auto hidden"
       />
 
-      <div className="grid grid-cols-1 md:p-10 p-0 md:grid-cols-[2fr_1.8fr] md:gap-16 gap-y-10 mt-10 ">
+      <div className="grid grid-cols-1 lg:p-10 p-0 lg:grid-cols-[2fr_1.8fr] lg:gap-16 gap-y-10 mt-10 ">
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {cardItems.map((item) => (
             <Card
@@ -66,7 +66,7 @@ const CtaTwoColumn: React.FC = () => {
           <img
             src={manwithphone}
             alt="Man with phone"
-            className="w-full h-full object-contain md:absolute relative"
+            className="w-full h-full object-contain lg:absolute relative"
           />
           <div className="absolute md:bottom-[13.5rem] bottom-[12rem] -left-8 md:-left-4 py-2 px-4 bg-[#009F79] border-4 border-white shadow-lg rounded-xl text-white flex space-x-4 items-center w-80 h-16 text-sm">
             <div className="flex justify-center items-center md:w-10 md:h-10 w-4 h-4 rounded-full bg-[#1E735E]">
