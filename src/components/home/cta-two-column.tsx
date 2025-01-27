@@ -68,25 +68,25 @@ const CtaTwoColumn: React.FC = () => {
             alt="Man with phone"
             className="w-full h-full object-contain lg:absolute relative"
           />
-          <div className="absolute md:bottom-[13.5rem] bottom-[12rem] -left-8 md:-left-4 py-2 px-4 bg-[#009F79] border-4 border-white shadow-lg rounded-xl text-white flex space-x-4 items-center w-80 h-16 text-sm">
+          <div className="absolute md:bottom-[13.5rem] bottom-[8.6rem] -left-8 md:-left-4 py-2 px-6 bg-[#009F79] border-4 border-white shadow-lg rounded-xl text-white flex space-x-4 items-center lg:w-80 w-64 sm:w-80 lg:h-16 text-sm">
             <div className="flex justify-center items-center md:w-10 md:h-10 w-4 h-4 rounded-full bg-[#1E735E]">
               👍🏽
             </div>
             <p className="font-medium">Picked by 314 people today</p>
           </div>
-          <div className="absolute md:bottom-[8rem] bottom-[7rem] md:left-8 left-6 py-2 px-4 bg-[#009F79] border-4 border-white shadow-lg rounded-xl text-sm text-white flex space-x-4 items-center w-80 h-16">
+          <div className="absolute md:bottom-[8rem] bottom-[5rem] md:left-8 left-6 py-2 px-4 bg-[#009F79] border-4 border-white shadow-lg rounded-xl text-sm text-white flex space-x-4 items-center w-64 sm:w-80 lg:w-80 lg:h-16">
             <div className="flex justify-center items-center md:w-10 md:h-10 w-4 h-4  rounded-full bg-[#1E735E]">
               🧅
             </div>
             <p className="font-medium">Exclude onions.</p>
           </div>
-          <div className="absolute md:bottom-[2.8rem] bottom-[2rem] md:left-14 left-12 py-2 px-4 bg-[#009F79] text-sm border-4 border-white shadow-lg rounded-xl text-white flex space-x-4 items-center w-80 h-16">
+          <div className="absolute md:bottom-[2.8rem] bottom-[1.4rem] md:left-14 left-12 py-2 px-4 bg-[#009F79] text-sm border-4 border-white shadow-lg rounded-xl text-white flex space-x-4 items-center w-64 sm:w-80 lg:w-80 lg:h-16">
             <div className="flex justify-center items-center md:w-10 md:h-10 w-4 h-4 rounded-full bg-[#1E735E]">
               🥩
             </div>
             <p className="font-medium">Must include turkey</p>
           </div>
-          <div className="absolute md:top-[10rem] top-[3rem] md:-right-10 -right-7 py-2 px-4 bg-[#D87023] border-4 border-white text-sm shadow-lg rounded-xl text-white space-y-2">
+          <div className="absolute md:top-[10rem] top-[1rem] sm:-right-6 -right-7 py-2 px-4 bg-[#D87023] border-4 border-white text-sm shadow-lg rounded-xl text-white space-y-2">
             <div className="flex justify-center items-center md:w-10 md:h-10 w-4 h-4 rounded-full bg-[#77441E]">
               💵
             </div>
