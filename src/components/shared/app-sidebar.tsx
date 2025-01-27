@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Home, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { instagram, twitter, facebook, logo } from "@/assets";
 import { Button } from "@/components/ui/button";
 
@@ -9,7 +9,7 @@ export function AppSidebar() {
   const currentPath = window.location.pathname;
 
   const navItems = [
-    { href: "/", label: "Home", icon: Home },
+    { href: "/", label: "Home" },
     { href: "/join-waitlist", label: "Join waitlist" },
   ];
 
@@ -71,7 +71,7 @@ export function AppSidebar() {
                         : "text-gray-700 hover:bg-[#FFF5EE] hover:text-[#d87023]"
                     }`}
                   >
-                    {item.icon && <item.icon className="h-5 w-5" />}
+                  
                     <span>{item.label}</span>
                   </a>
                 </li>
